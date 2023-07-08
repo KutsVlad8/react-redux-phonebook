@@ -6,9 +6,9 @@ const Header = () => {
       <Navigation>
         <NavigationItem to="/">Home</NavigationItem>
         <NavigationItem to="/registration">Registration</NavigationItem>
-        <NavigationItem to="/logIn">logIn</NavigationItem>
-        <NavigationItem to="/phonebook">phonebook</NavigationItem>
-        <NavigationItem to="/todoList">todoList</NavigationItem>
+        <NavigationItem to="/logIn">Log In</NavigationItem>
+        <NavigationItem to="/phonebook">Phonebook</NavigationItem>
+        <NavigationItem to="/notes">Notes</NavigationItem>
       </Navigation>
     </Head>
   );
