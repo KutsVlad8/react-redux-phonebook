@@ -11,6 +11,7 @@ export const Head = styled.header`
 `;
 
 export const Navigation = styled.nav`
+  display: flex;
   margin-left: 30px;
 `;
 

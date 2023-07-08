@@ -4,11 +4,16 @@ const Header = () => {
   return (
     <Head>
       <Navigation>
-        <NavigationItem to="/">Home</NavigationItem>
-        <NavigationItem to="/registration">Registration</NavigationItem>
-        <NavigationItem to="/logIn">Log In</NavigationItem>
-        <NavigationItem to="/phonebook">Phonebook</NavigationItem>
-        <NavigationItem to="/notes">Notes</NavigationItem>
+        <div>
+          <NavigationItem to="/">Home</NavigationItem>
+          <NavigationItem to="/phonebook">Phonebook</NavigationItem>
+          <NavigationItem to="/notes">Notes</NavigationItem>
+        </div>
+
+        <div>
+          <NavigationItem to="/registration">Registration</NavigationItem>
+          <NavigationItem to="/logIn">Log In</NavigationItem>
+        </div>
       </Navigation>
     </Head>
   );
