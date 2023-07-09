@@ -1,6 +1,6 @@
-import { ContactForm } from 'components/ContactForm/ContactForm';
 // import { ContactsList } from 'components/ContactsList/ContactsList';
 // import { ContactsFilter } from 'components/ContactsFiter/ContactsFiter';
+import { NoteForm } from 'components/NoteForm/NoteForm';
 import {
   Container,
   FormContainer,
@@ -8,23 +8,25 @@ import {
   // LeftContainer,
   // Template,
   // Title,
-} from './Phonebook.styled';
+} from './Notes.styled';
+// import { NotesList } from 'components/NotesList/NotesList';
+// import { NotesFilter } from 'components/NotesFilter/NotesFilter';
 
-const Phonebook = () => {
+const Notes = () => {
   return (
     <>
-      <Head>PhoneBook</Head>
+      <Head>Note</Head>
       <Container>
         <FormContainer>
-          <ContactForm />
+          <NoteForm />
         </FormContainer>
 
         {/* {contacts.length > 0 ? (
           <LeftContainer>
             <Title>Contacts</Title>
-            <ContactsFilter />
+            <NotesFilter />
 
-            <ContactsList />
+            <NotesList />
           </LeftContainer>
         ) : (
           <Template>add new contact</Template>
@@ -34,4 +36,4 @@ const Phonebook = () => {
   );
 };
 
-export default Phonebook;
+export default Notes;

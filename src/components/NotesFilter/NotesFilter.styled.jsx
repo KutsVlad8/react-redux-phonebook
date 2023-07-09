@@ -1,0 +1,27 @@
+import Styled from '@emotion/styled';
+
+export const Input = Styled.input`
+display: block;
+width: 350px;
+height: 30px;
+margin-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+border: none;
+border-bottom: 2px solid #1f76c1;
+color: #1f76c1;
+
+&:focus{
+    outline:none;
+	border: 1px solid #1f76c1;
+    border-radius:5px;
+   
+}
+
+ &::placeholder {
+    font: inherit;
+    font-size: 16px;
+    color:#1f76c1;
+  }
+
+`;
