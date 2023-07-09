@@ -4,13 +4,14 @@ import Phonebook from 'pages/Phonebook/Phonebook';
 import Notes from 'pages/Notes/Notes';
 import LogIn from 'pages/LogIn/LogIn';
 import Registration from 'pages/Registration/Registration';
+import Home from 'pages/Home/Home';
 
 export const App = () => {
   return (
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<div>Home</div>} />
+          <Route index element={<Home />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/logIn" element={<LogIn />} />
           <Route path="/phonebook" element={<Phonebook />} />
