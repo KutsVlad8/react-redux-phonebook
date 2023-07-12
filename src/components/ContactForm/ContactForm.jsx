@@ -13,8 +13,8 @@ export const ContactForm = () => {
     event.preventDefault();
     const form = event.target;
     const name = form.elements.name.value;
-    const phone = form.elements.number.value;
-    const contact = { name, phone };
+    const number = form.elements.number.value;
+    const contact = { name, number };
 
     const oldContact = contacts.map(oldContact =>
       oldContact.name.toLowerCase()

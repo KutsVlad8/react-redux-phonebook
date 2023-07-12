@@ -4,8 +4,16 @@ import Phonebook from 'pages/Phonebook/Phonebook';
 import LogIn from 'pages/LogIn/LogIn';
 import Register from 'pages/Register/Register';
 import Home from 'pages/Home/Home';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { fetchCurrentUser } from 'redux/auth/authOperations';
 
 export const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchCurrentUser());
+  }, [dispatch]);
   return (
     <>
       <Routes>

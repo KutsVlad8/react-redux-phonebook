@@ -1,6 +1,6 @@
 import { ContactForm } from 'components/ContactForm/ContactForm';
 import { ContactsList } from 'components/ContactsList/ContactsList';
-// import { ContactsFilter } from 'components/ContactsFiter/ContactsFiter';
+import { ContactsFilter } from 'components/ContactsFiter/ContactsFiter';
 import {
   Container,
   FormContainer,
@@ -32,7 +32,7 @@ const Phonebook = () => {
         {contacts.length > 0 ? (
           <LeftContainer>
             <Title>Contacts</Title>
-            {/* <ContactsFilter /> */}
+            <ContactsFilter />
 
             <ContactsList />
           </LeftContainer>
