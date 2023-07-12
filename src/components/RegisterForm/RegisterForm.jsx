@@ -1,13 +1,30 @@
 import { nanoid } from '@reduxjs/toolkit';
-import { Form, Input, Label, Button } from './RegistrationForm.styled';
-const nameInputNameId = nanoid(5);
-const nameInputEmailId = nanoid(5);
-const nameInputPasswordId = nanoid(5);
+import { Form, Input, Label, Button } from './RegisterForm.styled';
+import { useDispatch } from 'react-redux';
+import { register } from 'redux/auth/authOperations';
 
-export const RegistrationForm = () => {
+export const RegisterForm = () => {
+  const dispatch = useDispatch();
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    const form = event.target;
+    const name = form.elements.name.value;
+    const email = form.elements.email.value;
+    const password = form.elements.password.value;
+
+    dispatch(register({ name, email, password }));
+
+    form.reset();
+  };
+
+  const nameInputNameId = nanoid(5);
+  const nameInputEmailId = nanoid(5);
+  const nameInputPasswordId = nanoid(5);
+
   return (
     <>
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <Label htmlFor={nameInputNameId}>Name</Label>
         <Input
           id={nameInputNameId}
@@ -40,7 +57,7 @@ export const RegistrationForm = () => {
           required
         />
 
-        <Button type="submit">Registratin</Button>
+        <Button type="submit">Registration</Button>
       </Form>
     </>
   );

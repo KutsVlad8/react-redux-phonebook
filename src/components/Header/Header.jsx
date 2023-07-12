@@ -1,6 +1,12 @@
+import AuthNav from 'components/AuthNav/AuthNav';
 import { Head, Navigation, NavigationItem } from './Header.styled';
+import UserMenu from 'components/UserMenu/UserMenu';
+import { useSelector } from 'react-redux';
+import authSelectors from 'redux/auth/authSelectors';
 
 const Header = () => {
+  const isLoggedIn = useSelector(authSelectors.selectIsLoggedIn);
+
   return (
     <Head>
       <Navigation>
@@ -9,15 +15,16 @@ const Header = () => {
           <NavigationItem to="/phonebook">Phonebook</NavigationItem>
         </div>
 
-        <div>
-          <NavigationItem to="/registration">Registration</NavigationItem>
-          <NavigationItem to="/logIn">Log In</NavigationItem>
+        {/* <div>
+          <AuthNav />
         </div>
 
         <div>
-          <NavigationItem to="/">Log out</NavigationItem>
-        </div>
+          <UserMenu />
+        </div> */}
       </Navigation>
+
+      {isLoggedIn ? <UserMenu /> : <AuthNav />}
     </Head>
   );
 };
