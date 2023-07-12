@@ -12,12 +12,13 @@ import { configureStore } from '@reduxjs/toolkit';
 // } from 'redux-persist';
 // import storage from 'redux-persist';
 import authReducer from './auth/authSlise';
-// import { contactsReducer } from './contacts/contactsSlice';
+import contactsReducer from './contacts/contactsSlice';
+import filterReducer from './contacts/filterSlice';
 
 export const store = configureStore({
   reducer: {
     auth: authReducer,
-    // contacts: contactsReducer,
-    // filter: filterReducer,
+    contacts: contactsReducer,
+    filter: filterReducer,
   },
 });
