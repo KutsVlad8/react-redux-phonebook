@@ -3,7 +3,7 @@ import Styled from '@emotion/styled';
 export const Label = Styled.label`
 margin-bottom: 5px;
 margin-left: 24px;
-color:#1f76c1;
+color:#20b2aa;
 `;
 
 export const Input = Styled.input`
@@ -14,12 +14,12 @@ margin-bottom: 20px;
 margin-left: auto;
 margin-right: auto;
 border: none;
-border-bottom: 2px solid #1f76c1;
-color: #1f76c1;
+border-bottom: 2px solid #20b2aa;
+color: #20b2aa;
 
 &:focus{
     outline:none;
-	border: 1px solid #1f76c1;
+	border: 1px solid #20b2aa;
     border-radius:5px;
    
 }
@@ -27,7 +27,7 @@ color: #1f76c1;
  &::placeholder {
     font: inherit;
     font-size: 16px;
-    color:#1f76c1;
+    color:#20b2aa;
   }
 
 `;

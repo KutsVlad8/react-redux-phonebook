@@ -1,11 +1,13 @@
+import { Text, Title } from './Home.styled';
+
 const Home = () => {
   return (
     <>
-      <p>Добро пожаловать в ваш личный органайзер!!!</p>
-      <p>
-        Для того что бы начать записвать ваши заметки и контакты пройдите
-        регистрацию
-      </p>
+      <Title> Welcome to your personal phonebook</Title>
+      <Text>
+        In order to start recording your contacts, register or log in if you are
+        already registered
+      </Text>
     </>
   );
 };

@@ -1,10 +1,9 @@
 import styled from '@emotion/styled';
 
 export const FooTer = styled.footer`
-  // position: fixed;
-  // bottom: 0;
-  // left: 0;
-  // width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 1200px;
   height: 50px;
   padding: 8px;
 

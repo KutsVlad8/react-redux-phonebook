@@ -8,7 +8,7 @@ align-items: center;
 
 export const Label = Styled.label`
     margin-bottom: 5px;
-    color: #1f76c1;
+    color: #20b2aa;
 
 `;
 
@@ -18,12 +18,12 @@ export const Input = Styled.input`
     height: 30px;
     margin-bottom: 15px;
     border: none;
-    border-bottom: 2px solid #1f76c1;
-    color: #1f76c1;
+    border-bottom: 2px solid #20b2aa;
+    color: #20b2aa;
 
 &:focus{
     outline:none;
-	border: 1px solid #1f76c1;
+	border: 1px solid #20b2aa;
     border-radius:5px;
    
 }
@@ -31,7 +31,7 @@ export const Input = Styled.input`
  &::placeholder {
     font: inherit;
     font-size: 16px;
-    color:#1f76c1;
+    color:#20b2aa;
   }
 `;
 
@@ -39,14 +39,15 @@ export const Button = Styled.button`
 display: inline-block;
     height: 28px;
     background-color: white;
-    color: #1f76c1;
-    border: 1px solid #1f76c1;
+    color: #20b2aa;
+    border: 1px solid #20b2aa;
     border-radius: 3px;
     cursor: pointer;
     outline: none;
 
 &:focus,&:hover{
-	background-color: #1f76c1;
+      border: none;
+	background-color: #2f4f4f;
     color: white;
 	
 }
