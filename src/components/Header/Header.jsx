@@ -12,16 +12,10 @@ const Header = () => {
       <Navigation>
         <div>
           <NavigationItem to="/">Home</NavigationItem>
-          <NavigationItem to="/phonebook">Phonebook</NavigationItem>
+          {isLoggedIn && (
+            <NavigationItem to="/phonebook">Phonebook</NavigationItem>
+          )}
         </div>
-
-        {/* <div>
-          <AuthNav />
-        </div>
-
-        <div>
-          <UserMenu />
-        </div> */}
       </Navigation>
 
       {isLoggedIn ? <UserMenu /> : <AuthNav />}

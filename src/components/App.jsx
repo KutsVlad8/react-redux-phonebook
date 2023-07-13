@@ -7,6 +7,7 @@ import Home from 'pages/Home/Home';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchCurrentUser } from 'redux/auth/authOperations';
+// import PrivateRoute from './PrivateRoute';
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -21,6 +22,7 @@ export const App = () => {
           <Route index element={<Home />} />
           <Route path="/registration" element={<Register />} />
           <Route path="/logIn" element={<LogIn />} />
+
           <Route path="/phonebook" element={<Phonebook />} />
         </Route>
       </Routes>
